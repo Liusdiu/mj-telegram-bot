@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: mj-bot
+    env: python
+    buildCommand: ""
+    startCommand: "bash start.sh"
+    plan: free
+    envVars:
+      - key: TELEGRAM_TOKEN
+        value: insère_ici_ton_token_bot
+      - key: OPENAI_API_KEY
+        value: insère_ici_ton_token_openai
